@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, python, 课程, 教程, 学习资料, 有声书, 源码等">
+    <meta name="keywords" content="hexo 配置文件, python, 课程, 教程, 学习资料, 有声书, 源码等">
     <meta name="description" content="分享生活,分享知识">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 知识过客</title>
+    <title>hexo 配置文件 | 知识过客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">hexo 配置文件</h1>
                 </div>
             </div>
         </div>
@@ -368,12 +368,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                                <span class="chip bg-color">配置</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%BB%B4%E6%8A%A4/" class="post-category">
+                                维护
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -382,7 +395,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-12
+                    2022-08-20
                 </div>
                 
 
@@ -391,14 +404,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    789
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -421,20 +434,88 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="hexo-配置文件"><a href="#hexo-配置文件" class="headerlink" title="hexo 配置文件"></a>hexo 配置文件</h1><pre class="line-numbers language-none"><code class="language-none"># Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+# Site
+title: Hexo          # 网站的标题，可能用在各种布局的页面中
+subtitle:            # 网站子标题
+description:         # 网站的描述性
+keywords:            # 网站的关键字
+author: John Doe     # 网站的作者
+language:            # 网站采用语言，要跟/theme/***/languages/**.yml下的文件名对应。
+timezone:            # 网站的时区
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com              # 网站的url，如果不在域名根目录，应包含子目录，且root要设置为`/子目录/`
+root: /                               # 网站的根目录
+permalink: :year/:month/:day/:title/  #文章永久链接的形成模版。每一篇文章都有唯一的url。
+permalink_defaults:                   #文章永久链接中，各部分的默认值。
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+# Directory
+source_dir: source          # 网站中源文件（比如Markdown啊什么的所在的文件夹）
+public_dir: public          # 生成的静态网站的目录
+tag_dir: tags               # 标签页所在的文件夹。
+archive_dir: archives       # 文档页所在的文件夹
+category_dir: categories    # 类别也所在的文件夹
+code_dir: downloads/code    # 代码也所在的文件夹
+i18n_dir: :lang             # 国际语言所在的文件夹
+skip_render:                # 忽略文档清单
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+# Writing 写作
+new_post_name: :title.md    # 默认新建文档名，`:title`为变量，指文档标题，也可用其他变量
+default_layout: post        # 新建文档的默认布局
+titlecase: false            # 是否要把标题中的首字符大写
+external_link: true         # 是否要在新开tab中打开外链
+filename_case: 0            # 文件名是否小写敏感
+render_drafts: false        # 是否渲染草稿
+post_asset_folder: false    # 是否启用资源文件夹。如启用，新建文档同时建立同名的资源文件夹
+relative_link: false        # 是否把站内资源的链接改为站内相对链接。建议关闭。
+future: true                # 文档中指定为未来时间创建
+highlight:
+  enable: true              # 是否开启代码高亮功能
+  line_number: true         # 代码块中是否在前面加上行号
+  auto_detect: false        # 是否自动检测代码块的语言（比如xml、JavaScript、mermaid等）
+  tab_replace:              # 用什么字符来代替tab(`\t`)字符。
 
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:       
+  path: ''              # 主页所在路径，默认为''
+  per_page: 10          # 主页的索引页包含文章数量，如未定义，则采用根目录下的`per_page`值
+  order_by: -date       # 文章（Post类型）排序属性，`-`为降序
+
+# Category &amp; Tag
+default_category: uncategorized      # 对文档的默认分类
+category_map:                        # 对文档中的分类字段进行映射。建立分类文件夹时采用映射后的字符串
+tag_map:                             # 对文档中的标签字段进行映射。建立标签文件夹时采用映射后的字符串
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD   # 日期格式
+time_format: HH:mm:ss     # 时间格式
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10                      # 主页/分类/标签/存档等类型索引页包含文章数量
+pagination_dir: page              # 分页所在文件夹
+
+# Extensions                      # 扩展。放置插件和主题
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: landscape                                # 默认主题landscape
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html    
+deploy:                                         # 定义部署
+  type:
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -450,7 +531,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">过客</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -460,7 +541,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zmo6.github.io/08/3eeb">https://zmo6.github.io/08/3eeb</a>
+                    <a href="https://zmo6.github.io/08/7933">https://zmo6.github.io/08/7933</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -473,7 +554,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">John Doe</a>
+                    <a href="/about" target="_blank">过客</a>
                     !
                 </span>
             </div>
@@ -497,7 +578,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                                    <span class="chip bg-color">配置</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -686,7 +771,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-13
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-22
                         </span>
                         <span class="publish-author">
                             
@@ -726,34 +811,46 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/08/3eeb">
+                <a href="/08/7933">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="hexo 配置文件">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">hexo 配置文件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            配置文件
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BB%B4%E6%8A%A4/" class="post-category">
+                                    维护
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%85%8D%E7%BD%AE/">
+                        <span class="chip bg-color">配置</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
