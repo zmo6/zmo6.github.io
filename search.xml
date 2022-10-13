@@ -515,9 +515,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 英语 </tag>
+            
+            <tag> 学习 </tag>
             
             <tag> 语法 </tag>
             
@@ -689,8 +689,6 @@
       
         <tags>
             
-            <tag> 英语 </tag>
-            
             <tag> 资料 </tag>
             
             <tag> 精选 </tag>
@@ -700,6 +698,8 @@
             <tag> 幼儿 </tag>
             
             <tag> 国考 </tag>
+            
+            <tag> 英语 </tag>
             
             <tag> 阿里云盘 </tag>
             
