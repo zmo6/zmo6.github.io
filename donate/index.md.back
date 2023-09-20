@@ -1,0 +1,16 @@
+---
+title: donate
+date: 2022-08-13 15:14:01
+type: "donate"
+layout: "donate"
+---
+<html>
+
+<frameset cols="100%">
+
+  <frame src="https://donate.likd.top/donate">
+
+
+</frameset>
+
+</html>
