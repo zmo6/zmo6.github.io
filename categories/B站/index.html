@@ -13,27 +13,48 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
     <title>分类: B站 | 知识过客</title>
     <link rel="icon" type="image/png" href="/zmo6.github.io/favicon.png">
+    
 
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/zmo6.github.io/css/my.css">
 
-    <script src="/zmo6.github.io/libs/jquery/jquery.min.js"></script>
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/css/my.css">
+<link rel="stylesheet" type="text/css" href="/zmo6.github.io/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/zmo6.github.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/zmo6.github.io/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/zmo6.github.io/css/reward.css">
+    
+
+
+
+    <script src="/zmo6.github.io/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 6.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
-
-
 
 
 <body>
@@ -92,7 +113,7 @@
       
       <i class="fa fa-thumbs-up" style="zoom: 0.6;"></i>
       
-      <span>打赏</span>
+      <span>Donate</span>
     </a>
     
   </li>
@@ -146,6 +167,11 @@
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
 </ul>
 
 
@@ -162,8 +188,6 @@
             
         </div>
     </div>
-
-    
 
     <ul class="menu-list mobile-menu-list">
         
@@ -206,7 +230,7 @@
 			
 			    <i class="fa-fw fa fa-thumbs-up"></i>
 			
-			打赏
+			Donate
 		</a>
           
         </li>
@@ -264,8 +288,7 @@
 
         
     </nav>
-<script async defer data-website-id="ca1c4a2c-8a08-4c63-a410-12191fc64afe" src="https://umami.likd.top/umami.js"></script>
-<script async defer data-website-id="7f6ce2d0-bd2b-4d43-b3ef-3c0c429214c4" src="https://umami.likd.top/umami.js"></script>
+
 </header>
 
     <div class="bg-cover pd-header about-cover">
@@ -282,10 +305,16 @@
             <div class="description center-align">
                 
                 <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script src="/zmo6.github.io/libs/typed/typed.js"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        strings: [ 
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                        ],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -304,6 +333,13 @@
     // 每天切换 banner 图.  Switch banner image every day.
     var bannerUrl = "/zmo6.github.io/medias/banner/" + new Date().getDay() + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
+<script>
+    
+      var bannerUrl = "/zmo6.github.io/medias/featureimages/" + Math.floor(Math.random() * 24) + '.jpg';
+    
+    $('.bg-cover.about-cover').css('background-image', 'url(' + bannerUrl + ')');
+
 </script>
 
 
@@ -834,43 +870,58 @@
 </div>
 
 <script src="/zmo6.github.io/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script src="/zmo6.github.io/libs/aplayer/Meting.min.js"></script>
 
     
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-            
                 <span id="year">2019-2024</span>
-            
             
             <a href="/zmo6.github.io/about" target="_blank">John Doe</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
             
-            
-            
-            
-            
-            
-                <span id="busuanzi_container_site_pv" style='display:none'>
-                    <i class="fa fa-heart-o"></i>
-                   本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
-                </span>
-            
-            
-                <span id="busuanzi_container_site_uv" style='display:none'>
-                   人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
-                </span>
+                <span id="translate">|&nbsp;繁/简：</span><a id="translateLink" href="javascript:translatePage();">繁</a>
             
             <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
             
             <br>
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
 
 
 
@@ -878,6 +929,9 @@
 
 
 
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
 
 
 
@@ -996,6 +1050,30 @@ $(function () {
 });
 </script>
 
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
     <!-- 回到顶部按钮 -->
 <div id="backTop" class="top-scroll">
     <a class="btn-floating btn-large waves-effect waves-light" href="#!">
@@ -1010,6 +1088,40 @@ $(function () {
     <script src="/zmo6.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/zmo6.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/zmo6.github.io/js/matery.js"></script>
+
+    
+
+    
+        <script type="text/javascript" src="/zmo6.github.io/js/tw_cn.js"></script>
+        <script type="text/javascript">
+          var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+          var cookieDomain = "http://zmo6.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
+          var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
+          var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
+          var translateButtonId = "translateLink"; //默认互换id
+          translateInitilization();
+        </script>
+    
+    
+    
+        
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/zmo6.github.io/libs/others/sakura.js"><\/script>');
+            }
+        </script>
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
 
     <!-- Baidu Analytics -->
 
@@ -1040,7 +1152,8 @@ $(function () {
 
     
 
-	
+    <!--腾讯兔小巢-->
+    
     
 
     
